@@ -8,6 +8,9 @@ venv/
 
 # Streamlit local secrets only
 .streamlit/secrets.toml
+*.mp4
+.cac_login.txt
+.cac_remaining.md
 
 # --- PRIVATE: do NOT publish to the public hackathon repo ---
 # Your patent / awards / submission strategy stays off GitHub.
