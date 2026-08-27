@@ -8,7 +8,6 @@ See [`DOCUMENTATION.md`](DOCUMENTATION.md) for the full writeup.
 
 - **Code:** https://github.com/Hrishiv67/proofforge
 - **Live demo:** https://proofforge.streamlit.app
-- **Demo video (1:14, public):** https://youtu.be/_-oyBXK7kFA
 - **Local web demo:** `streamlit run app.py`
 
 **Kid version:** A pole falls over on its own. ProofForge invents a short formula
