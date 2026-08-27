@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+
+# Streamlit local secrets only
+.streamlit/secrets.toml
+
+# --- PRIVATE: do NOT publish to the public hackathon repo ---
+# Your patent / awards / submission strategy stays off GitHub.
+PATENT_DISCLOSURE.md
+AWARDS_ROADMAP.md
+SUBMIT_HERE.md
+MANUSCRIPT_JEI.md
+DEVPOST.md
+SUBMISSION_FORM_ANSWERS.md
+SUBMISSION_CHECKLIST.md
+DEMO_SCRIPT.md

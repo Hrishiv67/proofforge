@@ -1,0 +1,140 @@
+{
+  "item_name": "ProofForge proof-carrying controller",
+  "created_utc": "2026-08-18T21:20:47.903321+00:00",
+  "system": "inverted pendulum (open-loop unstable)",
+  "controller_u": "((sin_theta - (22.79 * theta)) - (7.978 * omega))",
+  "lyapunov_V": "(((16.33 * (theta)^2) + (1.86 * (omega)^2)) + (0.5193 * (theta * omega)))",
+  "controller_tree": {
+    "op": "-",
+    "children": [
+      {
+        "op": "-",
+        "children": [
+          {
+            "op": "feat",
+            "feat": 2
+          },
+          {
+            "op": "*",
+            "children": [
+              {
+                "op": "const",
+                "value": 22.78619871247455
+              },
+              {
+                "op": "feat",
+                "feat": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "op": "*",
+        "children": [
+          {
+            "op": "const",
+            "value": 7.977652177003777
+          },
+          {
+            "op": "feat",
+            "feat": 1
+          }
+        ]
+      }
+    ]
+  },
+  "lyapunov_tree": {
+    "op": "+",
+    "children": [
+      {
+        "op": "+",
+        "children": [
+          {
+            "op": "*",
+            "children": [
+              {
+                "op": "const",
+                "value": 16.328372813340692
+              },
+              {
+                "op": "square",
+                "children": [
+                  {
+                    "op": "feat",
+                    "feat": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "*",
+            "children": [
+              {
+                "op": "const",
+                "value": 1.8596348079408864
+              },
+              {
+                "op": "square",
+                "children": [
+                  {
+                    "op": "feat",
+                    "feat": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "op": "*",
+        "children": [
+          {
+            "op": "const",
+            "value": 0.5193265823591046
+          },
+          {
+            "op": "*",
+            "children": [
+              {
+                "op": "feat",
+                "feat": 0
+              },
+              {
+                "op": "feat",
+                "feat": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "controller_nodes": 9,
+  "lyapunov_nodes": 15,
+  "total_nodes": 24,
+  "plant": {
+    "g_over_l": 10.0,
+    "damping": 0.0,
+    "theta_max": 1.0,
+    "omega_max": 2.0
+  },
+  "verification": {
+    "certified": true,
+    "positive_definite": true,
+    "decreasing": true,
+    "origin_pos_def": true,
+    "origin_decreasing": true,
+    "worst_pos_slack": 0.0030366207031854164,
+    "worst_dec_slack": 0.009081362253392913,
+    "hessian_eig_min": 1.854976259096909,
+    "lin_Vdot_eig_max": -3.8052455839841905,
+    "grid_spacing": 0.024845199749997663,
+    "origin_cap_radius": 0.12422599874998831,
+    "certified_region_of_attraction_c": 7.42206009606554,
+    "roa_area_fraction": 0.5174445224504747,
+    "method": "dense-grid local-Lipschitz margin outside an analytic linearization cap at the origin"
+  }
+}

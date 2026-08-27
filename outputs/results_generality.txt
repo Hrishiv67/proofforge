@@ -1,0 +1,19 @@
+########## SYSTEM g/l = 6.0 ##########
+Controller u(theta,omega) = (((-(6.991 * sin_theta)) - (12.7 * theta)) - (9.382 * omega))
+Lyapunov   V(theta,omega) = (((14.68 * (theta)^2) + (1.671 * (omega)^2)) + (1.297 * (theta * omega)))
+First certified at gen    = 0
+Certified                 = True
+Certified safe-region frac= 0.513
+########## SYSTEM g/l = 10.0 ##########
+Controller u(theta,omega) = ((-(21.97 * sin_theta)) - (5.437 * omega))
+Lyapunov   V(theta,omega) = (((17.08 * (theta)^2) + (1.842 * (omega)^2)) + (17.08 + (theta * omega)))
+First certified at gen    = 0
+Certified                 = True
+Certified safe-region frac= 0.502
+########## SYSTEM g/l = 16.0 ##########
+Controller u(theta,omega) = (((-(-1.623 * sin_theta)) - (35.33 * theta)) - (8.176 * omega))
+Lyapunov   V(theta,omega) = (((20.75 * (theta)^2) + (2.172 * (omega)^2)) + (1.594 * (theta * omega)))
+First certified at gen    = 3
+Certified                 = True
+Certified safe-region frac= 0.493
+GENERALITY: certified 3/3 distinct systems.
