@@ -7,7 +7,8 @@ the proof over an entire region of operation, not just by testing.
 See [`DOCUMENTATION.md`](DOCUMENTATION.md) for the full writeup.
 
 - **Code:** https://github.com/Hrishiv67/proofforge
-- **Local web demo:** `streamlit run app.py` (Invent / Verify in the browser)
+- **Live demo:** https://proofforge.streamlit.app
+- **Local web demo:** `streamlit run app.py`
 
 **Kid version:** A pole falls over on its own. ProofForge invents a short formula
 that holds it upright, *and* a second short formula that **proves** it can never
